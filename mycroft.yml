@@ -26,6 +26,11 @@ actions:
     chroot: true
     command: echo "deb http://ports.ubuntu.com/ubuntu-ports bionic-backports main restricted multiverse universe" >> /etc/apt/sources.list
 
+  - action: run
+    description: Update repos
+    chroot: true
+    command: apt update
+
   - action: apt
     packages:
       - gnupg
