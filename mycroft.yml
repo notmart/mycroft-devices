@@ -109,6 +109,12 @@ actions:
     chroot: true
     script: scripts/051-zfs.sh
 
+  - action: run
+    description: Clone mycroft-core
+    chroot: true
+    script: scripts/92-clone-mycroft.sh
+
+
   # partition table
   - action: image-partition
     imagename: {{ $image }}
