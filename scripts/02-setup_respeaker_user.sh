@@ -18,6 +18,12 @@ mkdir -p /home/$USER/Pictures
 mkdir -p /home/$USER/Videos
 mkdir -p /home/$USER/Downloads
 mkdir -p /home/$USER/Documents
+
+# Install default kwallet files
+mkdir -p /home/$USER/.local/share
+cp -r /etc/skel/.local/kwalletd /home/$USER/.local/share
+
+# Set all access rights to the correct user/group
 chown -R $UGID:$UGID /home/$USER
 
 usermod -a -G ${DEFGROUPS} ${USER}
