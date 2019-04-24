@@ -95,6 +95,8 @@ actions:
       - git
       - qml-module-org-kde-lottie
       - libkf5wallet-bin
+      - openssh-server
+      - ftp
 
   - action: overlay
     source: overlay
