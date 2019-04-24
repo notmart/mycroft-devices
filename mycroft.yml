@@ -107,6 +107,11 @@ actions:
     script: scripts/02-setup_respeaker_user.sh
 
   - action: run
+    description: Set up locale
+    chroot: true
+    script: scripts/03-setup_locale.sh
+
+  - action: run
     description: remove zfs
     chroot: true
     script: scripts/051-zfs.sh
