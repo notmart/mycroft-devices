@@ -1,0 +1,2 @@
+locale-gen
+update-locale
