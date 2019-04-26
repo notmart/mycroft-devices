@@ -27,3 +27,6 @@ cp -r /etc/skel/.local/kwalletd /home/$USER/.local/share
 chown -R $UGID:$UGID /home/$USER
 
 usermod -a -G ${DEFGROUPS} ${USER}
+
+# Add user to i2c group
+usermod -a -G i2c ${USER}

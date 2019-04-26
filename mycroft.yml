@@ -97,6 +97,7 @@ actions:
       - libkf5wallet-bin
       - openssh-server
       - ftp
+      - i2c-tools
 
   - action: overlay
     source: overlay
