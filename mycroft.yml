@@ -71,6 +71,10 @@ actions:
 
   - action: apt
     packages:
+      - pcre2-utils
+
+  - action: apt
+    packages:
       - kwin-x11
       - libmali-rk-utgard-400-r7p0
       - linux-firmware-image-4.4.138-respeaker-r0
